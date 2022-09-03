@@ -10,7 +10,12 @@ export default class EventBinding extends Component {
     this.clickHandler=this.clickHandler.bind(this)
 }
 
-    clickHandler(){
+    // clickHandler(){
+    //     this.setState({
+    //         message:'Goodbye!'
+    //     })
+    // }
+    clickHandler=()=>{
         this.setState({
             message:'Goodbye!'
         })
@@ -19,6 +24,7 @@ export default class EventBinding extends Component {
     return (
         <div>
       <div>{this.state.message}</div>
+      {/* <button onClick={this.clickHandler}>Click</button> */}
       <button onClick={this.clickHandler}>Click</button>
       </div>
     )
