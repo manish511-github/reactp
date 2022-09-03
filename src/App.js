@@ -6,13 +6,15 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick'
 import ClassClick from './components/ClassClick';
 import EventBinding from './components/EventBinding';
+import ParentComponent from './components/ParentComponent';
 export default class App extends Component {
   render() {
     return (
    <div className="App">
-    <EventBinding>
-      
-    </EventBinding>
+    {/* <EventBinding/> */}
+    <ParentComponent/>
+
+
     {/* <FunctionClick/>
 
     <ClassClick/>
