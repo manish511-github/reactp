@@ -5,14 +5,18 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick'
 import ClassClick from './components/ClassClick';
+import EventBinding from './components/EventBinding';
 export default class App extends Component {
   render() {
     return (
    <div className="App">
-    <FunctionClick/>
+    <EventBinding>
+      
+    </EventBinding>
+    {/* <FunctionClick/>
 
     <ClassClick/>
- <Counter/>
+ <Counter/> */}
     {/* <Greet name="Bruce" heroName="Batsman" >
     <p>This is children props</p>
     </Greet>
